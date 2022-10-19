@@ -44,6 +44,9 @@ header nav a:active {
     border-bottom: 3px solid #fff;
     margin-bottom: -3px;
 }
+a.active {
+    border-bottom: 3px solid #fff;
+}
 main {
     padding: 20px 15px;
 }
