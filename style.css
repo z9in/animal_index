@@ -1,0 +1,90 @@
+/* style.css */
+/* 스타일 변수 선언 */
+:root {
+    /* 전역 변수 */
+    --main-color : #1abc9c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+header h1 {
+    text-align: center;
+    color: white;
+}
+header nav {
+    display: flex;
+}
+header nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 33.33%;
+    /* outline: 1px solid black; */
+    text-align: center;
+    margin-bottom: 3px solid transparent;
+    padding: 7px;
+}
+header nav a:hover, 
+header nav a:active {
+    border-bottom: 3px solid #fff;
+}
+main {
+    padding: 20px 15px;
+}
+main h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+main ul li img {
+    width: 100%;
+}
+.pet-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    /* 칼럼의 크기=크기-(여백/컬럼수) */
+    width: calc(50% - (15px / 2));
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+/* 우측 마진 제거(짝수) */
+.item:nth-child(2n) {
+    margin-right: 0px;
+}
+.item .name {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* 사진에 이름 배치 */
+.item {
+    position: relative;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    width: 89.5%;
+}
+
+img {
+    display: flex;
+}
