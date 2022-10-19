@@ -74,6 +74,7 @@ main ul li img {
     color: white;
     padding: 10px;
     text-align: center;
+    box-size: border-box;
 }
 /* 사진에 이름 배치 */
 .item {
@@ -82,7 +83,7 @@ main ul li img {
 .name {
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 100%;
 }
 
 img {
